@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  scroll-behavior: smooth;
+  font-size: 10px;
+  position: relative;
+  margin: 0;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+}
+  
+.card {
+  width: 330px;
+  margin: 3rem auto;
+  font-size: 1.4rem;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+} 
+.img, picture {
+  height: 250px;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  margin: auto;
+}
+.img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+}
+
+.card-content {
+  background-color: #fff;
+  border-radius: 0 0 10px 10px;
+  color: hsl(228, 12%, 48%);
+  padding: 2rem;
+}
+.label {
+  font-size: 1.2rem;
+  letter-spacing: 4px;
+}
+.card-content h1 {
+  color: hsl(212, 21%, 14%);
+  font-family: 'Fraunces', serif;
+  font-size: 3.2rem;
+  line-height: 1;
+}
+.par {
+  line-height: 1.5;
+}
+.price {
+  margin: 1rem 0;
+  position: relative;
+}
+.price-1 {
+  color: hsl(158, 36%, 37%);
+  font-family: 'Fraunces', serif;
+  font-size: 3rem;
+  margin-right: 1rem;
+}
+.price-2 {
+  font-size: 1.2rem;
+  text-decoration-line: line-through;
+}
+
+.button {
+  padding: 1rem 2.5rem;
+  background-color: hsl(158, 36%, 37%);
+  height: 50px;
+  width: 100%;
+  font-size: 1.4rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  color: hsl(30, 38%, 92%);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+.button:hover {
+  background-color: hsl(157, 38%, 23%);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* Small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+  
+ }
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+
+ }
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+
+ }
+
+/* Large devices (desktops, less than 1200px) */
+@media (min-width: 1199.98px) { 
+
+  .container {
+    height: 90vh;
+    position: relative;
+  }
+  .card {
+    width: 600px;
+    height: 430px;
+    flex-direction: row;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+  }
+
+  .img, picture {
+    height: 100%;
+    width: 300px;
+    border-radius: 10px 0 0 10px;
+    margin: auto;
+  }
+  .img img {
+    border-radius: 10px 0 0 10px;
+    object-fit: cover;
+  }
+
+  .card-content {
+    width: 50%;
+    border-radius: 0 10px 10px 0;
+    padding: 3rem;
+  }
+  .price {
+    margin: 2rem 0;
+  }
+
+  .button {
+    height: 45px;
+  }
+
+ }
