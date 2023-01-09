@@ -15,7 +15,10 @@ body {
   background-color: hsl(30, 38%, 92%);
   min-height: 100vh;
   display: flex;
-  align-items: center;
+  justify-content: center;
+}
+main {
+  display: flex;
   justify-content: center;
 }
   
@@ -93,8 +96,18 @@ body {
   background-color: hsl(157, 38%, 23%);
 }
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+footer {
+  position: fixed;
+  bottom: 0;
+}
+
+.attribution {
+  font-size: 11px; text-align: center;
+  padding: 2rem;
+}
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
 
 /* Small devices (phones, less than 576px) */
 @media (max-width: 575.98px) {
